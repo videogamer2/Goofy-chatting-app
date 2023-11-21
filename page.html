@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sala</title>
     <link rel="stylesheet" href="style.css">
-
+    
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -14,16 +14,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1 id="title-text" class="centerpiece">BTPP</h1>
-    <div class="panel panel-default myPanels" id="login_panel">
-        <br>
-        <div class="panel panel-heading">Login</div>
-        <div class="panel panel-body">
-            <input type="text" id="username">
-            <br>
-            <button class="myButtons" onclick="login()">Let's go!</button>
-        </div>
-      </div>
-    <script src="main.js"></script>
+    <button class="btn btn-danger myButtons" onclick="logout()">Logout</button>
+    <br>
+    <div id="output"></div>
+    <br>
+    <input type="text" id="message" class="form-control">
+    <br>
+    <button id="sender2thethingy" class="btn btn-primary" onclick="send()">Enviar</button>
+    <!--Last...-->
+    <script src="page.js"></script>
 </body>
 </html>

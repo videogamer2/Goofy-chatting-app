@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Find a Room</title>
     <link rel="stylesheet" href="style.css">
 
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
@@ -13,17 +13,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <h1 id="title-text" class="centerpiece">BTPP</h1>
-    <div class="panel panel-default myPanels" id="login_panel">
-        <br>
-        <div class="panel panel-heading">Login</div>
-        <div class="panel panel-body">
-            <input type="text" id="username">
-            <br>
-            <button class="myButtons" onclick="login()">Let's go!</button>
-        </div>
-      </div>
-    <script src="main.js"></script>
+<body onload="onload()">
+    <button class="btn btn-danger myButtons" onclick="logout()">Logout</button>
+    <br>
+    <h2 class="centerpiece" id="username-greet"></h2>
+    <br>
+    <h3 class="centerpiece">Salas:</h3>
+    <br>
+    <center>
+    <input type="text" id="addRoomInput" class="centerpiece">
+    <br>
+    <button onclick="addRoom()" class="btn btn-primary">Adicionar Sala</button>
+    <br>
+    <div id="output"></div>
+    <!-- help what am i supposed to do -->
+    </center>
+    <script src="room.js"></script>
 </body>
 </html>
